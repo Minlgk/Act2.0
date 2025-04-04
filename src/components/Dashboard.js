@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Container, Typography, Button, Table, TableBody, TableCell, TableHead, TableRow, Box } from '@mui/material';
 
@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [users, setUsers] = useState([]);
   const token = localStorage.getItem('token');
 
-  const fetchUsers = async () => {
+  const fetchUsers =useCallback( async () => {
     try {
       const res = await axios.get('http://localhost:5000/users', {
         headers: { Authorization: token }
@@ -15,11 +15,11 @@ const Dashboard = () => {
     } catch (err) {
       console.error('Error fetching users', err);
     }
-  };
+  }, [token]);
 
   useEffect(() => {
     fetchUsers();
-  }, []);
+  }, [fetchUsers]);
 
   // Se pueden agregar funciones para crear, editar y eliminar usuarios.
   // Aquí se muestra el listado de usuarios.
