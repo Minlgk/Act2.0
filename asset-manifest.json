@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Act2.0/static/css/main.e6c13ad2.css",
+    "main.js": "/Act2.0/static/js/main.5d04fec4.js",
+    "index.html": "/Act2.0/index.html",
+    "main.e6c13ad2.css.map": "/Act2.0/static/css/main.e6c13ad2.css.map",
+    "main.5d04fec4.js.map": "/Act2.0/static/js/main.5d04fec4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5d04fec4.js"
+  ]
+}
