@@ -38,7 +38,7 @@ const Dashboard = () => {
           <TableRow>
             <TableCell>ID</TableCell>
             <TableCell>Nombre</TableCell>
-            <TableCell>Email</TableCell>
+            <TableCell>Emaill</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
